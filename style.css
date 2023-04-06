@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* ## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+img, h1 {
+  margin-bottom: 2rem;
+}
+
+.container { 
+  max-width: 900px;
+}
+
+.grid {
+  display: grid;
+  border-radius: 0.7rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  margin: 2rem;
+} 
+
+.item {
+  padding: 2rem;
+}
+
+.btn {
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 1.8rem;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+.yellow-box {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.yellow-box .btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.blue-box {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.blue-box .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.green-box {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.green-box .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  color: hsl(0, 0%, 95%);
+  background: transparent;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
