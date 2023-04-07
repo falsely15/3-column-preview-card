@@ -106,3 +106,24 @@ img, h1 {
 .attribution a { 
   color: hsl(228, 45%, 44%); 
 }
+
+@media only screen and (max-width: 676px) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 380px;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  img, h1 {
+    margin-bottom: 1.5rem;
+  }
+
+}
